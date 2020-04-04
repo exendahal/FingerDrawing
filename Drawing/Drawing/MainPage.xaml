@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Drawing.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackLayout VerticalOptions="FillAndExpand">
+        <ScrollView>
+            <StackLayout VerticalOptions="FillAndExpand">
+
+                <controls:SignaturePadCanvasView
+                    x:Name="signatureView"
+                    BackgroundColor="Wheat"
+                    HeightRequest="500"
+                    StrokeColor="Black"
+                    StrokeWidth="3"
+                    VerticalOptions="FillAndExpand" />
+                <StackLayout
+                    Margin="20,10,20,10"
+                    HeightRequest="50"
+                    HorizontalOptions="EndAndExpand"
+                    Orientation="Horizontal"
+                    VerticalOptions="EndAndExpand">
+                    <Button Clicked="Button_Clicked" Text="Clear" />
+                    <Button Clicked="Button_Clicked_1" Text="Check" />
+                </StackLayout>
+                <StackLayout>
+                    <Image
+                        x:Name="writeText"
+                        Aspect="AspectFit"
+                        HeightRequest="100"
+                        WidthRequest="100" />
+                </StackLayout>
+            </StackLayout>
+
+        </ScrollView>
+
+    </StackLayout>
+
+</ContentPage>
