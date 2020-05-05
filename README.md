@@ -1,5 +1,5 @@
 # FingerDrawing
-Drawing characters/signature with finger and get image.
+Drawing characters/signature with finger and get image using Xamarin Forms.
 
 ## Developed using 
 Xamarin Forms V 4.5.0.530
